@@ -1,0 +1,527 @@
+
+/* The general setting for all links */
+/* No special attributes necessary
+a:link      { }
+a:visited   { }
+a:hover { }
+a:active    { } */
+
+/* The base element of the page, these attributes are inherited to all other pages */
+body    
+{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/********************************************************************************************/
+
+/* Style of the sidenav */
+nav
+{
+    position:fixed; /* Position them fixed to the browser window */
+    transition:0.3s; /* Add transition on hover */
+    font-size:16pt;
+    margin:40px 0 0 0;
+    padding:0;
+    z-index:2;
+}
+
+nav ul
+{
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+nav ul li
+{
+    margin:0;
+    padding:0;
+}
+
+nav ul li span
+{
+    margin:0;
+    padding:8px 8px 8px 8px;
+    vertical-align:middle;
+    position:absolute;
+    width:200px;
+    -moz-border-radius:0 8px 8px 0;
+    -webkit-border-radius:0 8px 8px 0;
+    border-radius:0 8px 8px 0;
+    visibility:hidden;
+    opacity:0;
+    -webkit-transition:opacity 0.3s linear, visibility 0.3s linear; 
+    -moz-transition:opacity 0.3s linear, visibility 0.3s linear; 
+    -o-transition:opacity 0.3s linear, visibility 0.3s linear; 
+    transition:opacity 0.3s linear, visibility 0.3s linear;     
+}
+
+nav ul li:hover
+{
+    visibility:visible;
+    opacity:1;
+}
+
+nav ul li:hover > span
+{
+    visibility:visible;
+    opacity:1;
+}
+
+nav a
+{
+    text-decoration:none; /* Remove underline */
+}
+
+@media (max-width:469px) or (max-height:551px)
+{
+nav
+{
+    font-size:14pt;
+}
+
+nav img
+{
+    width:30px;
+    height:30px;
+}
+
+nav ul li span
+{
+    padding:4px 4px 4px 4px;
+    width:175px;
+}
+}
+
+@media (max-width:349px) or (max-height:431px)
+{
+nav
+{
+    font-size:12pt; 
+}
+
+nav img
+{
+    width:20px;
+    height:20px;
+}
+
+nav ul li span
+{
+    padding:2px 2px 2px 2px;
+    width:150px;
+}
+}
+
+/********************************************************************************************/
+
+/* This DIV defines the paper for all pages. The paper is a little bit smaller than the window so that the background of the window still can be seen. On this paper the contents of the page is written but not the menues and the footer. */
+div.pp
+{
+    float:none; 
+    margin:0 4px 0 4px;
+    font-size:12pt; 
+    padding:4px 4px 32px 45px;
+}
+
+@media (max-width:499px) or (max-height:499px)
+{
+    div.pp
+    { 
+        font-size:11pt; 
+        padding-left:35px; 
+    }
+}
+
+@media (max-width:349px) or (max-height:349px)
+{
+    div.pp  
+    { 
+        font-size:10pt; 
+        padding-left:25px; 
+    }
+}
+
+/* For selection table */
+div.sl a
+{
+    text-decoration:none; /* Remove underline */
+}
+
+/********************************************************************************************/
+
+/* Defines the format of the items in the title bar */
+div.tb
+{
+    float:left;
+    width:100%;
+    line-height:normal;
+    margin:0 0 8px 0;
+    padding:0;
+    background-repeat:0;
+}
+
+div.tb p
+{
+    display:inline;
+}
+
+/* Left part of the titlebar */
+div.tb p.lf
+{
+    margin:2px 0 4px 0;
+    padding:2px 12px 2px 12px;
+    font-weight:bold;
+    font-size:18pt;
+}
+
+@media (max-width:499px) or (max-height:499px)
+{
+    div.tb p.lf { font-size:16pt; }
+}
+
+@media (max-width:349px) or (max-height:349px)
+{
+    div.tb p.lf { font-size:14pt; }
+}
+
+/* Right part of the titlebar */
+div.tb p.rt
+{
+    float:right;
+    margin:0;
+    padding:0;
+}
+
+/********************************************************************************************/
+
+/* Defines the format of the common buttons at the end of a chapter */
+div.bu      { position:relative; margin:8px; padding:0px; }
+
+button
+{
+    margin:0 2px 0 0;
+    padding:4px 8px 4px 8px;
+    font-size:10pt;
+    font-weight:bold;
+    -moz-border-radius:6px 6px 6px 6px;
+    -webkit-border-radius:6px 6px 6px 6px;
+    border-radius:6px 6px 6px 6px;
+}
+
+button a:link       { text-decoration:none; }
+button a:visited    { text-decoration:none; }
+button a:hover      { text-decoration:none; }
+
+@media (max-width:499px) or (max-height:499px)
+{
+    button  { font-size:9pt; }
+}
+
+@media (max-width:349px) or (max-height:349px)
+{
+    button  { font-size:8pt; }
+}
+
+/********************************************************************************************/
+
+/* Defines the format of the rounded frames around a chapter */
+div.rd
+{
+    float:none;
+    clear:left;
+    margin:8px 0 8px 0;
+    padding:0;
+    -moz-border-radius:0 0 8px 8px;
+    -webkit-border-radius:0 0 8px 8px;
+    border-radius:0 0 8px 8px;
+}
+
+div.rd h1
+{
+    font-size:14pt;
+    margin:0;
+    padding:4px 4px 4px 8px;
+}
+
+div.rd h1 + h1 { margin-top:8px; }
+
+@media (max-width:499px) or (max-height:499px)
+{
+    div.rd h1   { font-size:12pt; }
+}
+
+@media (max-width:349px) or (max-height:349px)
+{
+    div.rd h1   { font-size:10pt; }
+}
+
+div.rd p    { margin:8px; }
+
+/********************************************************************************************/
+
+/* Defines the format of the items in the footer bar */
+div.ft
+{
+    float:left;
+    width:100%;
+    line-height:normal;
+    margin:0 0 8px 0;
+    padding:6px 0px 4px 4px;
+    background-repeat:0;
+}
+
+div.ft p
+{
+    display:inline;
+    font-size:11pt;
+}
+
+@media (max-width:499px) or (max-height:499px)
+{
+    div.ft p { font-size:10pt; }
+}
+
+@media (max-width:349px) or (max-height:349px)
+{
+    div.ft p { font-size:9pt; }
+}
+
+div.ft p.lf
+{
+    font-weight:bold;
+    margin:0 0 0 4px;
+    padding:0;
+}
+
+div.ft p.rt
+{
+    float:right;
+    margin:0 8px 0 0;
+    padding:0;
+}
+
+/********************************************************************************************/
+
+/* Defines the format of the search list data */
+div.iv
+{
+    display:none;
+}
+
+/********************************************************************************************/
+
+/* Defines the format of the logo */
+div.logo
+{
+    text-align:center;
+    padding-top:48px;
+    padding-bottom:24px;
+}
+
+/********************************************************************************************/
+
+/* Defines the format of the search/filter boxes for the pages with the selection of the series, storyarcs, dates etc. */
+form
+{
+    float:none;
+    clear:left;
+    padding:4px;
+    -moz-border-radius:0 0 8px 8px;
+    -webkit-border-radius:0 0 8px 8px;
+    border-radius:0 0 8px 8px;
+    margin: 8px 0 8px 0; }
+}
+
+/* Defines the format of the input form for search/filter. */
+table.fm    { margin:0; padding:0; }
+table.fm td { font-size:9pt; }
+
+@media (max-width:499px) or (max-height:499px)
+{
+    table.fm td { font-size:8pt; }
+}
+
+@media (max-width:349px) or (max-height:349px)
+{
+    table.fm td { font-size:7pt; }
+}
+
+td.fml  { margin:0; padding:0; width:80%; }
+td.fmo  { margin:0; padding:0; white-space:nowrap; }
+td.fmi  { margin:0; padding:0; vertical-align:top; }
+td.fmb  { margin:0; padding:0; }
+
+input.txt   { margin:0; padding-left:2px; padding-right:2px; width:95%; }
+
+button.fmb  { margin:0 0 0 8px; }
+
+div.tbe { margin-bottom:8px; }
+
+/********************************************************************************************/
+
+/* Defines the format of lists */
+dl  { margin:8px; }
+
+/********************************************************************************************/
+
+/* Defines the format of the tables that are used for reprints overview. */
+table.r         { margin:8px; }
+
+table.r th
+{
+    vertical-align:top;
+    text-align:left;
+    font-weight:bold;
+    padding:0 4px 0 4px;
+}
+
+table.r td
+{
+    vertical-align:top;
+    text-align:left;
+    font-weight:normal;
+    padding:0 4px 0 4px;
+}
+
+table.r td.n    { text-align:right; }
+
+/********************************************************************************************/
+
+/* Defines the format of the tables that are used for the date overview. */
+table.d     { margin:8px;
+              padding:0px; }
+              
+table.d th  { vertical-align:top; 
+              text-align:center; 
+              font-weight:bold; 
+              padding-top:2px; 
+              padding-left:2px; 
+              padding-right:2px; 
+              padding-bottom:2px;
+            }
+            
+table.d td  { vertical-align:top; 
+              text-align:left; 
+              font-weight:normal; 
+              padding-top:1px; 
+              padding-left:2px; 
+              padding-right:2px; 
+              padding-bottom:1px;
+            }
+
+/* l)eft c)enter justified ... l)ight gray, d)ark gray ... s)eries */
+table.d td.l, table.d td.ll, table.d td.ls, table.d td.lls
+            { text-align:left; }
+
+table.d td.c, table.d td.cl, table.d td.cd
+            { text-align:center; }
+
+
+/********************************************************************************************/
+
+/* Defines the format of the tables that are used for the selection overview. */
+table.s     { margin:8px; }
+
+table.s td
+{
+    vertical-align:top;
+    text-align:left;
+    font-weight:normal;
+    padding:0 4px 0 4px;
+}
+
+table.s td.n    { text-align:right; }
+
+table.s a:link    { text-decoration:none; }
+table.s a:visited { text-decoration:none; }
+table.s a:hover   { text-decoration:none; }
+
+/********************************************************************************************/
+
+/* Defines the format of the normal tables, i.e. all tables that do not contain special contents. */
+table.n     { margin:8px 8px 0 8px; }
+
+table.n th
+{
+    vertical-align:top;
+    text-align:center;
+    font-weight:bold;
+    background-repeat:repeat-x;
+    padding:4px 4px 4px 4px;
+}
+
+table.n td
+{
+    vertical-align:top;
+    text-align:left;
+    font-weight:normal;
+    padding:0 4px 0 4px;
+}
+
+/********************************************************************************************/
+
+/* Defines the format of the tables that are used for the info of the comics. */
+/* The table gets a fat frame line left, right and at the bottom. The frame line on top is done by the first line. */
+table.i         { margin:8px; }
+table.i tr.c    { background-image:url(canceled.png); }     /* Book is canceled */
+table.i tr.s    { background-image:url(solicited.png); }     /* Book is solicited */
+
+table.i th
+{
+    text-align:left;
+    vertical-align:top;
+    font-weight:normal;
+    padding:0 4px 0 4px;
+}
+
+table.i th.n    { text-align:right; }   /* Display number of book */
+table.i th.r    { text-align:right; }   /* Display price of book */
+
+/* The next attributes are valid for all lines of the table, but can be overwritten by more specialized classes. */
+table.i td
+{
+    text-align:left;
+    vertical-align:top;
+    font-weight:normal;
+    padding:0 4px 2px 4px;
+}
+
+/* e)ven row, o)dd row, f)irst row of story, t)itle, n)umber */
+table.i td.en, table.i td.efn, table.i td.on, table.i td.ofn    { text-align:right; }
+table.i td.et, table.i td.eft, table.i td.ot, table.i td.oft    { font-weight:bold; }
+/* table.i td.ef, table.i td.of   nothing special */
+
+table.i td p { margin:2px 0 0 0; padding:0; }
+
+/* table.i td.ft   nothing special */
+
+/* table.i td.neg   nothing special */
+
+/********************************************************************************************/
+
+/* Defines the format of the tables that are used for the features. */
+table.f         
+{ 
+    margin:0 0 4px 0; 
+    padding:0;
+}
+
+table.f th
+{
+    vertical-align:top;
+    text-align:center;
+    font-weight:bold;
+    padding:0 4px 0 4px;
+}
+
+table.f td
+{
+    vertical-align:top;
+    text-align:left;
+    font-weight:normal;
+    padding:0 4px 2px 4px;
+}
+
+table.f td.n    { text-align:right; }

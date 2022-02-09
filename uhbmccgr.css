@@ -1,0 +1,298 @@
+
+/* Commentaries for the attributes can be found in uhbmcc.css. */
+
+a:link      { color:#58b851; }
+a:visited   { color:#3a7f35; }
+a:hover     { color:red; }
+a:active    { color:maroon; }
+
+body    { background-image:url(grp.png); }
+
+/********************************************************************************************/
+
+nav ul li span
+{
+    background-color:#eeeeee;
+    border-top:1px solid black;
+    border-right:1px solid black;
+    border-bottom:1px solid black;
+    border-left:0 solid black;
+}
+
+nav a:link      { color:#58b851; }
+nav a:visited   { color:#3a7f35; }
+nav a:hover     { color:red; }
+nav a:active    { color:maroon; }
+
+/********************************************************************************************/
+
+div.pp  { background-color:white; }
+
+/********************************************************************************************/
+
+div.tb
+{
+    background-color:#43a61e;
+    background-image:-webkit-linear-gradient(#9fd897, #43a61e 8px);
+    background-image:-moz-linear-gradient(#9fd897, #43a61e 8px);
+    background-image:-ms-linear-gradient(#9fd897, #43a61e 8px);
+    background-image:-o-linear-gradient(#9fd897, #43a61e 8px);
+    background-image:linear-gradient(#9fd897, #43a61e 8px);
+    box-shadow:6px 6px 6px #aaaaaa;
+}
+
+div.tb a:link       { color:#d5efd1; text-decoration:none; }
+div.tb a:visited    { color:white; }
+div.tb a:hover      { color:red; }
+div.tb a:active     { color:maroon; }
+
+div.tb p            { color:#d5efd1; }
+
+/********************************************************************************************/
+
+/* div.bu */
+
+button
+{
+    color:#444444; 
+    text-shadow:white 1px 1px;
+    background-color:#d0d0d0;
+    background-image:-webkit-linear-gradient(#e8e8e8, #d0d0d0);
+    background-image:-moz-linear-gradient(#e8e8e8, #d0d0d0);
+    background-image:-ms-linear-gradient(#e8e8e8, #d0d0d0);
+    background-image:-o-linear-gradient(#e8e8e8, #d0d0d0);
+    background-image:linear-gradient(#e8e8e8, #d0d0d0);
+}
+
+button a:link       { color:#444444; }
+button a:visited    { color:#444444; }
+button a:hover      { color:red; }
+button a:active     { color:maroon; }
+
+/********************************************************************************************/
+
+div.rd
+{
+    border:1px solid #43a61e; 
+    background-color:white; 
+    box-shadow:6px 6px 6px #aaaaaa;
+}
+
+div.rd h1
+{
+    color:#d5efd1;
+    background-color:#43a61e;
+    background-image:-webkit-linear-gradient(#9fd897, #43a61e 8px);
+    background-image:-moz-linear-gradient(#9fd897, #43a61e 8px);
+    background-image:-ms-linear-gradient(#9fd897, #43a61e 8px);
+    background-image:-o-linear-gradient(#9fd897, #43a61e 8px);
+    background-image:linear-gradient(#9fd897, #43a61e 8px);
+    background-repeat:0;
+}
+
+/********************************************************************************************/
+
+div.ft
+{
+    background-color:#43a61e;
+    background-image:-webkit-linear-gradient(#9fd897, #43a61e 8px);
+    background-image:-moz-linear-gradient(#9fd897, #43a61e 8px);
+    background-image:-ms-linear-gradient(#9fd897, #43a61e 8px);
+    background-image:-o-linear-gradient(#9fd897, #43a61e 8px);
+    background-image:linear-gradient(#9fd897, #43a61e 8px);
+    box-shadow:6px 6px 6px #aaaaaa;
+}
+
+div.ft a:link       { color:#d5efd1; text-decoration:none; }
+div.ft a:visited    { color:white; }
+div.ft a:hover      { color:red; }
+div.ft a:active     { color:maroon; }
+
+div.ft p            { color:#d5efd1; }
+
+/********************************************************************************************/
+
+/* div.iv    nothing special */
+
+/********************************************************************************************/
+
+/* div.logo    nothing special */
+
+/********************************************************************************************/
+
+form
+{
+    border:1px solid black; 
+    box-shadow:6px 6px 6px #aaaaaa;
+    background-color:#d0d0d0;
+    background-image:-webkit-linear-gradient(#e8e8e8, #d0d0d0);
+    background-image:-moz-linear-gradient(#e8e8e8, #d0d0d0);
+    background-image:-ms-linear-gradient(#e8e8e8, #d0d0d0);
+    background-image:-o-linear-gradient(#e8e8e8, #d0d0d0);
+    background-image:linear-gradient(#e8e8e8, #d0d0d0);
+}
+
+table.fm    { color:black; }
+
+input.txt   { border:2px inset gray; background-color:white; }
+
+/********************************************************************************************/
+
+/* dl   nothing special */
+
+/********************************************************************************************/
+
+/* table.r, table.r th, table.r td.n    nothing special */
+table.r td      { color:black; }
+
+/********************************************************************************************/
+
+table.d         { color:black; }
+table.d th      { color:#d5efd1;
+                  background-color:#43a61e;
+                  background-image:-webkit-linear-gradient(#9fd897, #43a61e 8px);
+                  background-image:-moz-linear-gradient(#9fd897, #43a61e 8px);
+                  background-image:-ms-linear-gradient(#9fd897, #43a61e 8px);
+                  background-image:-o-linear-gradient(#9fd897, #43a61e 8px);
+                  background-image:linear-gradient(#9fd897, #43a61e 8px);
+}
+
+/* l)eft c)enter justified ... l)ight gray, d)ark gray ... s)eries */
+table.d td.l, table.d td.ll, table.d td.c, table.d td.cl, table.d td.cd
+                { border-top:1px solid #43a61e; 
+                  border-left:1px solid #43a61e; 
+                  border-right:0px; 
+                  border-bottom:0px; 
+                }
+                
+table.d td.ls, table.d td.lls
+                { border-top:1px solid #43a61e; 
+                  border-left:0px; 
+                  border-right:0px; 
+                  border-bottom:0px;
+                }
+                
+table.d td.ll, table.d td.lls, table.d td.cl
+                { background-color:#f0f0f0; }
+                
+table.d td.cd   { background-color:#e0e0e0; }
+
+/********************************************************************************************/
+
+/* table.s, table.s td.n    nothing special */
+table.s td      { color:black; }
+
+/********************************************************************************************/
+
+table.n
+{
+    border-top:0px;
+    border-left:0px;
+    border-right:1px solid #43a61e;
+    border-bottom:1px solid #43a61e;
+}
+
+table.n th
+{
+    color:#d5efd1;
+    background-color:#43a61e;
+    border-top:1px solid #43a61e;
+    border-left:1px solid #43a61e;
+    border-right:0px;
+    border-bottom:0px;
+}
+
+table.n td
+{
+    color:black;
+    border-top:1px solid #43a61e;
+    border-left:1px solid #43a61e;
+    border-right:0px;
+    border-bottom:0px;
+}
+
+/********************************************************************************************/
+
+table.i
+{
+    border-top:0px;
+    border-left:2px solid #43a61e;
+    border-right:2px solid #43a61e;
+    border-bottom:2px solid #43a61e;
+}
+
+table.i tr  { border:1px solid red; }
+/* table.i tr.c    nothing special */
+/* table.i tr.s    nothing special */
+
+table.i th
+{
+    border-top:2px solid #43a61e;
+    border-left:0px;
+    border-right:0px;
+    border-bottom:0px;
+    background-color:#f0f0f0;
+}
+
+table.i th.n
+{
+    border-top:2px solid #43a61e;
+    border-left:0px;
+    border-right:0px;
+    border-bottom:0px;
+}
+/* table.i th.r     nothing special */
+
+/* table.i td       nothing special */
+/* e)ven row, o)dd row, f)irst row of story, t)itle, n)umber */
+table.i td.ef, table.i td.eft, table.i td.en, table.i td.efn, table.i td.of, table.i td.oft, table.i td.on, table.i td.ofn
+{
+    border-top:1px solid #43a61e;
+    border-left:0px;
+    border-right:0px;
+    border-bottom:0px;
+}
+/*table.i td.e, table.i td.ef, table.i td.eft, table.i td.en, table.i td.efn        { background-color:#ffffd0; }*/
+
+table.i td.ft
+{
+    border-top:1px solid #43a61e;
+    border-left:0px;
+    border-right:0px;
+    border-bottom:0px;
+}
+
+/* The Stan Lee Commemorative Issue lines are written white on a black bar */
+table.i td.neg              { color:white; background-color:black; }
+table.i td.neg a:link       { color:white; }
+table.i td.neg a:visited    { color:white; }
+table.i td.neg a:active     { color:white; }
+
+/********************************************************************************************/
+
+table.f
+{
+    border-top:0px;
+    border-left:0px;
+    border-right:1px solid #43a61e;
+    border-bottom:1px solid #43a61e;
+}
+
+table.f th
+{
+    color:#d5efd1;
+    background-color:#43a61e;
+    border-top:1px solid #43a61e;
+    border-left:1px solid #43a61e;
+    border-right:0px;
+    border-bottom:0px;
+}
+
+table.f td
+{
+    color:black;
+    border-top:1px solid #43a61e;
+    border-left:1px solid #43a61e;
+    border-right:0px;
+    border-bottom:0px;
+}
